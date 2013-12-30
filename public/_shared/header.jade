@@ -1,0 +1,20 @@
+include ../mixins/header_helper
+
+title(ng-bind='pageTitle')
+meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
++meta_tag("viewport","width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no")
++meta_tag("apple-mobile-web-app-capable","yes")
++meta_tag("apple-mobile-web-app-status-bar-style","black-translucent")
+// compiled CSS
++stylesheet_link_tag('css/bootstrap.css')
++stylesheet_link_tag('css/main.css')
+// JavaScript
++javascript_include_tag('vendor/angular/angular.js')
++javascript_include_tag('vendor/angular-bootstrap/ui-bootstrap-tpls.min.js')
++javascript_include_tag('vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js')
++javascript_include_tag('vendor/angular-ui-router/release/angular-ui-router.js')
++javascript_include_tag('vendor/angular-ui-utils/modules/route/route.js')
+// Your App JavaScript
++javascript_include_tag('app/about/about.js')
++javascript_include_tag('app/home/home.js')
++javascript_include_tag('app/app.js')

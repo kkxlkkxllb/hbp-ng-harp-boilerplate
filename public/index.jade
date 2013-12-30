@@ -1,0 +1,17 @@
+doctype html
+html(ng-app='ngHarpBoilerplate', ng-controller='AppCtrl')
+	head
+		include _shared/header
+	body
+		.container
+			h3.muted
+				| ng-harp-boilerplate
+				small
+					a(href='http://github.com/silentrob/hbp-ng-harp-boilerplate/') v0.0.1
+			include _shared/nav
+		.container(ui-view='main')
+	footer.footer
+		.container
+			.footer-inner
+				p
+				| veggie at 17up
